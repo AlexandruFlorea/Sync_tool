@@ -44,10 +44,10 @@ def compare_folder_hash(source_folder, replica_folder):
 
 # Command line argument reader
 def parse_arguments():
-    parser = argparse.ArgumentParser(description='Data synchronisation')
+    parser = argparse.ArgumentParser(description='Data synchronization')
     parser.add_argument('source_folder', help='Path to the source folder')
     parser.add_argument('replica_folder', help='Path to the replica folder')
-    parser.add_argument('interval', type=int, help='Synchronisation interval in seconds')
+    parser.add_argument('interval', type=int, help='Synchronization interval in seconds')
     parser.add_argument('log_file', help='Path to the log file')
     return parser.parse_args()
 
@@ -56,7 +56,7 @@ def parse_arguments():
 def folder_sync(source_folder, replica_folder, log_file, recursive=False):
     # Log entry only when starting sync
     if not recursive:
-        log('Starting data synchronisation.', log_file, log_type='info')
+        log('Starting data synchronization.', log_file, log_type='info')
 
     # Compare files and sub-folders
     source_files = os.listdir(source_folder)
@@ -108,7 +108,7 @@ def folder_sync(source_folder, replica_folder, log_file, recursive=False):
             log(f'"{file}" copied from "{source_path}" to "{replica_path}".',
                 log_file, log_type='change', recursive=recursive)
     if not recursive:
-        log('Data synchronisation complete.', log_file, log_type='info')
+        log('Data synchronization complete.', log_file, log_type='info')
 
 
 def main():
