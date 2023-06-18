@@ -1,4 +1,4 @@
-# Synchronisation tool
+# Synchronization tool
 
 This is a program that synchronizes two folders, a source and a replica. 
 All changes done in the source folder will be applied to the replica folder, recursively going through their subfolders and files.
