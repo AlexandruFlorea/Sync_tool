@@ -5,6 +5,7 @@ All changes done in the source folder will be applied to the replica folder, rec
 A log file is also udated with every performed action, while also printing to the console.
 
 To run the script, you must enter the folowing arguments via command line: source folder path, replica folder path, synchronization interval in seconds, log file path.
+
 Example: python sync_tool_hash.py E:\Python\Sync_tool\Origin E:\Python\Sync_tool\Replica 15 E:\Python\Sync_tool\log.txt
 
 There are two versions of the script:
